@@ -1,0 +1,43 @@
+/* Light mode */
+:root {
+  color-scheme: light;
+
+  --background-color: hsl(0, 0%, 90%);
+  --text-color: hsl(0, 0%, 15%);
+
+  --button-color: var(--text-color);
+
+  /* Colors */
+  --yellow: hsl(40, 74%, 54%);
+  --yellow-text: var(--text-color);
+  --blue: hsl(240, 63%, 48%);
+  --blue-text: var(--background-color);
+  --red: hsl(0, 55%, 40%);
+  --red-text: var(--background-color);
+  --gray: hsl(0, 0%, 35%);
+  --gray-text: var(--background-color);
+  --green: hsl(109, 37%, 52%);
+
+  /* Values */
+  --container-gap: 10px;
+  --border-width: 2px;
+}
+
+@media (prefers-color-scheme: dark) {
+  /* Dark mode */
+  :root {
+    color-scheme: dark;
+
+    --background-color: hsl(0, 0%, 0%);
+    --text-color: hsl(0, 0%, 85%);
+
+    /* Colors */
+    --yellow-text: var(--background-color);
+    --blue: hsl(230, 58%, 41%);
+    --blue-text: var(--text-color);
+    --red: hsl(0, 49%, 49%);
+    --gray: hsl(0, 0%, 25%);
+    --gray-text: var(--text-color);
+    --green: hsl(119, 38%, 33%);
+  }
+}

@@ -1,0 +1,106 @@
+@import 'font.css';
+@import 'value.css';
+
+* {
+  box-sizing: border-box;
+  padding: 0;
+  margin: 0;
+}
+
+/* Body styles */
+body,
+html {
+  font-family: 'Happiness Sans', sans-serif;
+  font-weight: 600;
+}
+
+body {
+  display: flex;
+  justify-content: center;
+
+  padding: 50px 15px;
+
+  background-color: var(--background-color);
+  color: var(--text-color);
+}
+
+/* Button styles */
+button {
+  display: inline-block;
+  padding: 5px 10px;
+
+  cursor: pointer;
+
+  border: solid var(--border-width) var(--button-color);
+
+  background-color: transparent;
+  color: var(--button-color);
+
+  font-family: inherit;
+  font-size: 1rem;
+  font-weight: bold;
+}
+
+button.warning {
+  --button-color: var(--red);
+}
+
+button:hover {
+  background-color: var(--button-color);
+  color: var(--background-color);
+}
+
+/* Main styles */
+.main-container {
+  display: flex;
+  gap: 30px;
+  flex-direction: column;
+
+  width: 100%;
+  max-width: 500px;
+
+  text-align: center;
+}
+
+.vertical-container {
+  display: flex;
+  gap: var(--container-gap);
+  flex-direction: column;
+}
+
+#button-container {
+  display: flex;
+  gap: var(--container-gap);
+  justify-content: center;
+}
+
+/* Pick result styles */
+#result-container {
+  gap: 12px;
+  align-items: center;
+}
+
+.pick-result {
+  display: flex;
+  gap: 7px;
+  justify-content: center;
+
+  width: 100%;
+}
+
+.pick-result > span {
+  display: grid;
+  place-items: center;
+
+  width: 40px;
+  height: 40px;
+
+  background-color: var(--color);
+  color: var(--text-color);
+
+  border-radius: 100%;
+
+  font-size: 1.2rem;
+  font-variant-numeric: proportional-nums;
+  font-weight: 900;
+}
