@@ -2,8 +2,8 @@ const LOTTO_MAX_NUMBER = 45,
   LOTTO_NUMBER_PICK = 6
 
 /**
- * Picks random numbers multiple times/
- * @returns {number[]} An array that contains random numbers
+ * Picks random numbers multiple times.
+ * @returns {number[]} A sorted array that contains random numbers
  */
 function pickRandomLottoNumber() {
   /** @type {number[]} */
