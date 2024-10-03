@@ -2,8 +2,8 @@
 :root {
   color-scheme: light;
 
-  --background-color: hsl(0, 0%, 90%);
-  --text-color: hsl(0, 0%, 15%);
+  --background-color: hsl(0, 0%, 100%);
+  --text-color: hsl(0, 0%, 10%);
 
   --button-color: var(--text-color);
 
@@ -29,7 +29,7 @@
     color-scheme: dark;
 
     --background-color: hsl(0, 0%, 0%);
-    --text-color: hsl(0, 0%, 85%);
+    --text-color: hsl(0, 0%, 90%);
 
     /* Colors */
     --yellow-text: var(--background-color);
